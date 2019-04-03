@@ -23,11 +23,6 @@ body{
   width: 100%;
 }
 
-.header .inner{
-  display: flex;
-  margin-left: 50px;
-}
-
 .fa-glay{
   color: #4e4e4e;
   float: left;
@@ -41,7 +36,6 @@ body{
   background-color: #74cfae;
   font-size: 12px;
   cursor: pointer;
-  margin-left: 930px;
   float: right;
   transition: 0.3s;
 }
@@ -224,4 +218,8 @@ figcaption{
 
 .footer__sentence{
   text-align: right;
+}
+
+@media screen(min-width:768px) and (max-width:1199px) {
+
 }
