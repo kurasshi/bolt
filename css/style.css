@@ -1,20 +1,30 @@
 body{
   overflow-x: hidden;
+  font-family: 'Lato', sans-serif;
 }
 
-.wrapper{
-  margin: 0 auto;
-  width: 1100px;
+.inner{
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.raleway{
+  font-family: 'Raleway', sans-serif;
 }
 
 .header{
-  padding: 15px;
   position: fixed;
-  display: flex;
   background-color: #fff;
   z-index: 10;
   padding: 15px 500%;
   margin: 0 -500%;
+}
+
+.header .inner{
+  display: flex;
+  margin-left: 50px;
 }
 
 .fa-glay{
@@ -30,9 +40,9 @@ body{
   background-color: #74cfae;
   font-size: 12px;
   cursor: pointer;
-  margin-left: 980px;
-  text-align: center;
+  margin-left: 930px;
   float: right;
+  transition: 0.3s;
 }
 
 .header__contact .header__contact__btn:hover{
@@ -52,53 +62,49 @@ body{
   text-align: center;
   background-color: #f2f2f2;
   top: 70px;
-  padding: 300px 500% 250px 500%;
+  padding: 320px 500% 250px 500%;
   margin: 0 -500%;
 }
 
 .theme__title{
   font-size: 90px;
   font-weight: 700;
-  font-family: 'Lato', sans-serif;
   color: #74cfae;
   margin-bottom: 20px;
 }
 
 .theme__subtitle{
   font-size: 30px;
-  font-family: 'Lato', sans-serif;
   color: #c0c0c0;
 }
 
 .whatWeCanDo{
   background-color: #74cfae;
-  padding: 100px 500% 0 500%;
+  padding: 50px 500% 0 500%;
   margin: 0 -500%;
-  font-family: 'Raleway', sans-serif;
   color: #fff;
-  text-align: center;
 }
 
-.whatWeCanDo__image{
-  float: left;
-  margin-left: 100px;
-  margin-right: 100px;
-}
-
-.whatWeCanDo__title .whatWeCanDo__article{
-  float: right;
+.whatWeCanDo__inner{
+  display: flex;
+  padding-left: 50px;
 }
 
 .whatWeCanDo__title{
   font-size: 24px;
-  margin-top: 20px;
+  margin-top: -50px;
   margin-bottom: 35px;
+  text-align: center;
 }
 
 .whatWeCanDo__article{
   font-size: 20px;
   line-height: 22px;
   letter-spacing: 2px;
+}
+
+.whatWeCanDo__contents{
+  margin: 0 100px 0 50px;
 }
 
 .ourLatestWork{
@@ -110,9 +116,7 @@ body{
 .ourLatestWork__title{
   color: #222;
   font-size: 24px;
-  font-family: 'Raleway', sans-serif;
   margin-bottom: 40px;
-  text-align: center;
 }
 
 .ourLatestWork__image{
@@ -120,6 +124,7 @@ body{
   margin-bottom: 80px;
   display: inline-block;
   opacity: 0.7;
+  transition: 0.3s;
   cursor: pointer;
 }
 
@@ -132,17 +137,11 @@ body{
   margin-right: 0px;
 }
 
-
-.ourSkills__article{
-  text-align: center;
-  font-family: 'Raleway', sans-serif;
-}
-
 .ourSkills__article__sentence{
   float: left;
   width: 500px;
   margin-left: 180px;
-  font-size: 12px;
+  font-size: 16px;
   line-height: 16px;
   letter-spacing: 2px;
 }
@@ -157,6 +156,7 @@ body{
   margin-left: 90px;
   margin-right: 180px;
   cursor: pointer;
+  transition: 0.3s;
 }
 
 .ourSkills__article__btn:hover{
@@ -172,17 +172,14 @@ body{
 
 .ourSkills__title{
   color: #fff;
-  text-align: center;
-  font-family: 'Raleway', sans-serif;
   margin-bottom: 60px;
+  font-size: 24px;
 }
 
 figure{
-  float: left;
+  display: inline-block;
   margin-left: 160px;
-  text-align: center;
   color: #fff;
-  font-family: 'Raleway', sans-serif;
 }
 
 figure:first-child{
@@ -190,29 +187,28 @@ figure:first-child{
 }
 
 figcaption{
-  margin-left: 30px;
   padding-top: 20px;
 }
 
-.ourSkills__content .ourSkills__image:first-child{
-  margin-left: 30px;
+.ourSkills__content{
+
 }
 
 .sns__images__btn{
   display: inline-block;
   width: 185px;
   cursor: pointer;
-  text-align: center;
   padding: 20px 0;
+  transition: 0.3s;
 }
 
 .sns__images__btn:hover{
   background-color: #fff;
+  transition: 0.3s;
 }
 
 .sns{
   padding: 200px 0;
-  text-align: center;
   background-color: #f2f2f2;
   padding: 200px 500% 200px 500%;
   margin: 0 -500%;
