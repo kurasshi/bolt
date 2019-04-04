@@ -19,26 +19,17 @@ img{
   font-family: 'Raleway', sans-serif;
 }
 
-.header .inner{
-  display: inline-block;
+.header{
   background-color: #fff;
   z-index: 10;
   padding: 15px 20px;
-  width: 100%;
+  position: fixed;
 }
 
-.header__logo{
-  display: inline-block;
-  text-align: left;
-  vertical-align: middle;
-  margin-right: 45%;
-}
-
-.header__contact{
-  display: inline-block;
-  text-align: right;
-  vertical-align: middle;
-  margin-left: 45%;
+.header .inner{
+  display: flex;
+  justify-content: space-between;
+  width: 97%;
 }
 
 .fa-glay{
@@ -61,14 +52,6 @@ img{
 .header__contact .header__contact__btn:hover{
   color: #333;
   transition: 0.3s;
-}
-
-.clearfix::after{
-  content: ".";
-  display: block;
-  height: 0;
-  clear: both;
-  visibility: hidden;
 }
 
 .theme{
@@ -162,7 +145,6 @@ img{
 }
 
 .ourSkills__article__sentence{
-  float: left;
   width: 500px;
   margin-left: 180px;
   font-size: 16px;
@@ -171,7 +153,6 @@ img{
 }
 
 .ourSkills__article__btn{
-  float: right;
   color: #fff;
   background-color: #74cfae;
   text-decoration: none;
@@ -215,16 +196,14 @@ figcaption{
 }
 
 .sns__images{
-  display: inline-block;
+  display: table;
+  margin: 0 auto;
+  width: 80%;
+  table-layout: fixed;
 }
 
 .sns__images__link{
-  display: inline-block;
-}
-
-.sns__images__link{
-  display: inline-block;
-  width: 185px;
+  display: table-cell;
   cursor: pointer;
   padding: 20px 0;
   transition: 0.3s;
@@ -258,11 +237,28 @@ figcaption{
   text-align: right;
 }
 
+@media screen and (min-width:1200px){
+.ourSkills__article__sentence{
+  float: left;
+}
+
+.ourSkills__article__btn{
+  float: right;
+}
+
+.clearfix::after{
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+}
 
 @media screen and (min-width:768px) and (max-width:1199px) {
 
 .inner{
-  width: 100%;
+  width: 97%;
 }
 
 .header{
@@ -270,8 +266,7 @@ figcaption{
 }
 
 .whatWeCanDo__inner{
-  display: inline-block;
-  width: 97%;
+  display: block;
   padding: 0;
 }
 
@@ -282,12 +277,11 @@ figcaption{
 }
 
 .whatWeCanDo__contents{
-  margin: 20px 50px 25px 50px;
+  margin: 20px;
   padding: 0;
 }
 
 .whatWeCanDo__title{
-  margin-top: 20px;
   margin-bottom: 35px;
 }
 
@@ -302,16 +296,12 @@ figcaption{
 }
 
 .ourSkills__article__sentence{
-  float: none;
   display: block;
-  margin-left: 0px;
-  padding-bottom: 40px;
   width: 80%;
-  margin: 0 auto;
+  margin: 0 auto 40px;
 }
 
 .ourSkills__article__btn{
-  float: none;
   display: block;
   width: 70px;
   margin: 0 auto;
@@ -327,5 +317,9 @@ figure:last-child{
   margin-bottom: 0px;
 }
 
+}
 
-}*/
+@media screen and (min-width:767px) {
+
+
+}
