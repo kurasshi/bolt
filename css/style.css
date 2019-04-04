@@ -19,17 +19,31 @@ img{
   font-family: 'Raleway', sans-serif;
 }
 
-.header{
-  position: fixed;
+.header .inner{
+  display: inline-block;
   background-color: #fff;
   z-index: 10;
-  padding: 15px 0;
+  padding: 15px 20px;
   width: 100%;
+}
+
+.header__logo{
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+  margin-right: 45%;
+}
+
+.header__contact{
+  display: inline-block;
+  text-align: right;
+  vertical-align: middle;
+  margin-left: 45%;
 }
 
 .fa-glay{
   color: #4e4e4e;
-  float: left;
+  text-align: left;
 }
 
 .header__contact__btn{
@@ -40,8 +54,8 @@ img{
   background-color: #74cfae;
   font-size: 12px;
   cursor: pointer;
-  float: right;
   transition: 0.3s;
+  text-align: right;
 }
 
 .header__contact .header__contact__btn:hover{
@@ -236,7 +250,8 @@ figcaption{
   width: 100%;
   background-color: #74cfae;
   color: #fff;
-  padding: 20px 0 25px 0;
+  padding: 20px 20px 25px 0;
+  box-sizing: border-box;
 }
 
 .footer__sentence{
@@ -244,19 +259,72 @@ figcaption{
 }
 
 
-/*
-@media screen(min-width:768px) and (max-width:1199px) {
+@media screen and (min-width:768px) and (max-width:1199px) {
+
+.inner{
+  width: 100%;
+}
+
+.header{
+  width: 97%;
+}
+
 .whatWeCanDo__inner{
-  display: block;
+  display: inline-block;
+  width: 97%;
+  padding: 0;
+}
+
+.whatWeCanDo{
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 25px;
 }
 
 .whatWeCanDo__contents{
-  margin-top: 20px;
-  margin-bottom: 25px;
+  margin: 20px 50px 25px 50px;
+  padding: 0;
 }
 
 .whatWeCanDo__title{
+  margin-top: 20px;
   margin-bottom: 35px;
+}
+
+.ourLatestWork__image{
+  display: block;
+  margin-right: 0;
+  margin-bottom: 0;
+}
+
+.ourLatestWork__image:nth-of-type(3n){
+  margin-bottom: 80px;
+}
+
+.ourSkills__article__sentence{
+  float: none;
+  display: block;
+  margin-left: 0px;
+  padding-bottom: 40px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.ourSkills__article__btn{
+  float: none;
+  display: block;
+  width: 70px;
+  margin: 0 auto;
+}
+
+figure{
+  display: block;
+  margin-left: 0;
+  margin-bottom: 88px;
+}
+
+figure:last-child{
+  margin-bottom: 0px;
 }
 
 
