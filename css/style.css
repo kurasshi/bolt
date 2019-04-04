@@ -24,12 +24,12 @@ img{
   z-index: 10;
   padding: 15px 20px;
   position: fixed;
+  width: 100%;
 }
 
 .header .inner{
   display: flex;
   justify-content: space-between;
-  width: 97%;
 }
 
 .fa-glay{
